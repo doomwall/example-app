@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Docker</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: #f0f4f8;
+      }
+      h1 {
+        font-size: 2.5rem;
+        color: #1a202c;
+      }
+      p {
+        color: #4a5568;
+        margin-bottom: 2rem;
+      }
+      button {
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+        background: #3182ce;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      button:hover {
+        background: #2b6cb0;
+      }
+      #message {
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+        color: #2d3748;
+        min-height: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello from Docker!</h1>
+    <p>A simple TypeScript app served via nginx in a container.</p>
+    <button id="btn">Click me</button>
+    <p id="message"></p>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
